@@ -41,7 +41,7 @@ pipeline {
                 usernamePassword(credentialsId: 'GitHub', usernameVariable: 'GITHUB_USERNAME', passwordVariable: 'GITHUB_TOKEN')
                ]) {
 
-                 sh 'git push https://$GITHUB_TOKEN@ggithub.com/LiranMil/NetflixInfra.git main'
+                 sh 'git push https://$GITHUB_TOKEN@github.com/LiranMil/NetflixInfra.git main'
 
                }
             }
